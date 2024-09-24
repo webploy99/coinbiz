@@ -146,3 +146,26 @@ let scale7 = document.getElementById('scale7').style
   }
 
 
+  function amazonUrl() {
+    location.href = "https://www.amazon.com/";
+  }
+
+  let popup1 = document.getElementById("PopUp1");
+  let popup2 = document.getElementById("PopUp2");
+
+  function togglePopup(showPopup, hidePopup) {
+      showPopup.style.display = "flex";
+      hidePopup.style.display = "none";
+  }
+  function ShowPopUp1() {
+      togglePopup(popup1, popup2);
+  }
+  function ShowPopUp2() {
+      togglePopup(popup2, popup1);
+  }
+  function HidePopUp() {
+      popup1.style.display = "none";
+      popup2.style.display = "none";
+  }
+
+
